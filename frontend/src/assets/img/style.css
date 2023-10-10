@@ -1,0 +1,57 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+.box {
+  background: url(../DSC_4453.JPG);
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+.foto-profil {
+  background-image: url(../DSC_4453.JPG);
+  -webkit-background-size: cover;
+  background-size: cover;
+  border-radius: 50px;
+  outline: 2px solid white;
+  height: 300px;
+  width: 300px;
+}
+@keyframes animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+@media (min-width: 768px) {
+  .box {
+    background: url(../DSC_4453.JPG);
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 535px;
+    width: 535px;
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+  }
+}
+@media (min-width: 1024px) {
+  .box {
+    background: url(../DSC_4453.JPG);
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+  }
+}
